@@ -1,0 +1,21 @@
+{
+  "name": "llm-arithmetic",
+  "version": "1.0.0",
+  "description": "Ten SaaS arithmetic problems given to two Claude models with every tool disabled, scored against ground truth computed in code.",
+  "license": "MIT",
+  "author": "Dmitry Semenkevich <dimhold@gmail.com>",
+  "type": "module",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "probe": "tsx run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
