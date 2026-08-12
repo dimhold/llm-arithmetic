@@ -1,0 +1,355 @@
+{
+  "date": "2026-08-12",
+  "seed": 20260812,
+  "models": [
+    "claude-haiku-4-5",
+    "claude-opus-5"
+  ],
+  "prompt": "Answer the question below. Do not show any working, do not explain. Reply with exactly one line in the form:\nANSWER: <number>",
+  "cliArgs": [
+    "-p",
+    "--output-format",
+    "json",
+    "--model",
+    "<model>",
+    "--tools",
+    "\"\"",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "no-mcp.json"
+  ],
+  "tasks": [
+    {
+      "id": "mrr-0",
+      "kind": "mrr",
+      "months": 36,
+      "want": 38115.30678167854,
+      "question": "A SaaS starts at $8,000 MRR. Each month, in this exact order: MRR first grows by 7.0%, then 2.4% of the resulting MRR churns away. What is MRR after 36 months?"
+    },
+    {
+      "id": "cash-1",
+      "kind": "cash",
+      "months": 60,
+      "want": 4864506.921884278,
+      "question": "A company starts with $900,000 in cash. It spends a fixed $40,000 every month. Revenue is $18,000 in month 1 and grows 5.0% every month after that (month 2 revenue = month 1 revenue x 1.05, and so on). Cash after 60 months = starting cash + all revenue collected - all spend. What is it?"
+    },
+    {
+      "id": "ltv-2",
+      "kind": "ltv",
+      "months": null,
+      "want": 7800.000000000001,
+      "question": "ARPU is $240/month, gross margin is 78%, monthly customer churn is 2.4%. Using LTV = ARPU x gross margin / monthly churn, what is LTV?"
+    },
+    {
+      "id": "two-phase-3",
+      "kind": "two-phase",
+      "months": 60,
+      "want": 18578.74834305274,
+      "question": "A SaaS starts at $26,000 MRR. Each month, in this exact order: MRR grows, then churn is applied to the grown figure. Growth is 9.0% for months 1 through 6, and 3.0% from month 7 onwards. Churn is 4.0% every month. What is MRR after 60 months?"
+    },
+    {
+      "id": "runway-4",
+      "kind": "runway",
+      "months": null,
+      "want": 5,
+      "question": "A company has $300,000 in cash and no revenue. Monthly burn is $60,000 in months 1, 2 and 3, then increases by $10,000 every 3 months (so it steps up in month 4, again in month 7, and so on). In which month number does the cash balance first go below zero?"
+    },
+    {
+      "id": "mrr-5",
+      "kind": "mrr",
+      "months": 60,
+      "want": 14887.453040647115,
+      "question": "A SaaS starts at $12,000 MRR. Each month, in this exact order: MRR first grows by 4.0%, then 3.5% of the resulting MRR churns away. What is MRR after 60 months?"
+    },
+    {
+      "id": "cash-6",
+      "kind": "cash",
+      "months": 36,
+      "want": 5822959.304807226,
+      "question": "A company starts with $420,000 in cash. It spends a fixed $40,000 every month. Revenue is $18,000 in month 1 and grows 11.0% every month after that (month 2 revenue = month 1 revenue x 1.11, and so on). Cash after 36 months = starting cash + all revenue collected - all spend. What is it?"
+    },
+    {
+      "id": "ltv-7",
+      "kind": "ltv",
+      "months": null,
+      "want": 2346.842105263158,
+      "question": "ARPU is $49/month, gross margin is 91%, monthly customer churn is 1.9%. Using LTV = ARPU x gross margin / monthly churn, what is LTV?"
+    },
+    {
+      "id": "two-phase-8",
+      "kind": "two-phase",
+      "months": 36,
+      "want": 21262.901931922686,
+      "question": "A SaaS starts at $9,000 MRR. Each month, in this exact order: MRR grows, then churn is applied to the grown figure. Growth is 9.0% for months 1 through 6, and 3.0% from month 7 onwards. Churn is 1.5% every month. What is MRR after 36 months?"
+    },
+    {
+      "id": "runway-9",
+      "kind": "runway",
+      "months": null,
+      "want": 11,
+      "question": "A company has $750,000 in cash and no revenue. Monthly burn is $60,000 in months 1, 2 and 3, then increases by $10,000 every 3 months (so it steps up in month 4, again in month 7, and so on). In which month number does the cash balance first go below zero?"
+    }
+  ],
+  "rows": [
+    {
+      "id": "mrr-0",
+      "kind": "mrr",
+      "months": 36,
+      "model": "claude-haiku-4-5",
+      "want": 38115.30678167854,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 38115.03,
+      "relError": 0.00000726169357961938,
+      "thinkingTokens": 11835,
+      "outputTokens": 11849,
+      "raw": "ANSWER: 38115.03"
+    },
+    {
+      "id": "cash-1",
+      "kind": "cash",
+      "months": 60,
+      "model": "claude-haiku-4-5",
+      "want": 4864506.921884278,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 4864308,
+      "relError": 0.000040892507189769324,
+      "thinkingTokens": 1547,
+      "outputTokens": 1561,
+      "raw": "ANSWER: $4,864,308"
+    },
+    {
+      "id": "ltv-2",
+      "kind": "ltv",
+      "months": null,
+      "model": "claude-haiku-4-5",
+      "want": 7800.000000000001,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 7800,
+      "relError": 1.1660188484268308e-16,
+      "thinkingTokens": 187,
+      "outputTokens": 198,
+      "raw": "ANSWER: 7800"
+    },
+    {
+      "id": "two-phase-3",
+      "kind": "two-phase",
+      "months": 60,
+      "model": "claude-haiku-4-5",
+      "want": 18578.74834305274,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 18586,
+      "relError": 0.0003903199942945877,
+      "thinkingTokens": 11085,
+      "outputTokens": 11096,
+      "raw": "ANSWER: 18586"
+    },
+    {
+      "id": "runway-4",
+      "kind": "runway",
+      "months": null,
+      "model": "claude-haiku-4-5",
+      "want": 5,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 5,
+      "relError": 0,
+      "thinkingTokens": 469,
+      "outputTokens": 480,
+      "raw": "ANSWER: 5"
+    },
+    {
+      "id": "mrr-5",
+      "kind": "mrr",
+      "months": 60,
+      "model": "claude-haiku-4-5",
+      "want": 14887.453040647115,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 14888.57,
+      "relError": 0.00007502689344075032,
+      "thinkingTokens": 4581,
+      "outputTokens": 4594,
+      "raw": "ANSWER: 14888.57"
+    },
+    {
+      "id": "cash-6",
+      "kind": "cash",
+      "months": 36,
+      "model": "claude-haiku-4-5",
+      "want": 5822959.304807226,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 5817183.87,
+      "relError": 0.0009918384286934773,
+      "thinkingTokens": 4697,
+      "outputTokens": 4711,
+      "raw": "ANSWER: 5817183.87"
+    },
+    {
+      "id": "ltv-7",
+      "kind": "ltv",
+      "months": null,
+      "model": "claude-haiku-4-5",
+      "want": 2346.842105263158,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 2347.37,
+      "relError": 0.0002249383269790866,
+      "thinkingTokens": 343,
+      "outputTokens": 356,
+      "raw": "ANSWER: $2347.37"
+    },
+    {
+      "id": "two-phase-8",
+      "kind": "two-phase",
+      "months": 36,
+      "model": "claude-haiku-4-5",
+      "want": 21262.901931922686,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 21353,
+      "relError": 0.004237336388315204,
+      "thinkingTokens": 11961,
+      "outputTokens": 11972,
+      "raw": "ANSWER: 21353"
+    },
+    {
+      "id": "runway-9",
+      "kind": "runway",
+      "months": null,
+      "model": "claude-haiku-4-5",
+      "want": 11,
+      "answeredBy": "claude-haiku-4-5-20251001",
+      "got": 11,
+      "relError": 0,
+      "thinkingTokens": 535,
+      "outputTokens": 546,
+      "raw": "ANSWER: 11"
+    },
+    {
+      "id": "mrr-0",
+      "kind": "mrr",
+      "months": 36,
+      "model": "claude-opus-5",
+      "want": 38115.30678167854,
+      "answeredBy": "claude-opus-5",
+      "got": 38115.31,
+      "relError": 8.443645686841937e-8,
+      "thinkingTokens": 2563,
+      "outputTokens": 2576,
+      "raw": "ANSWER: 38115.31"
+    },
+    {
+      "id": "cash-1",
+      "kind": "cash",
+      "months": 60,
+      "model": "claude-opus-5",
+      "want": 4864506.921884278,
+      "answeredBy": "claude-opus-5",
+      "got": 4864506.92,
+      "relError": 3.873522928947228e-10,
+      "thinkingTokens": 1395,
+      "outputTokens": 1409,
+      "raw": "ANSWER: 4864506.92"
+    },
+    {
+      "id": "ltv-2",
+      "kind": "ltv",
+      "months": null,
+      "model": "claude-opus-5",
+      "want": 7800.000000000001,
+      "answeredBy": "claude-opus-5",
+      "got": 7800,
+      "relError": 1.1660188484268308e-16,
+      "thinkingTokens": 27,
+      "outputTokens": 38,
+      "raw": "ANSWER: 7800"
+    },
+    {
+      "id": "two-phase-3",
+      "kind": "two-phase",
+      "months": 60,
+      "model": "claude-opus-5",
+      "want": 18578.74834305274,
+      "answeredBy": "claude-opus-5",
+      "got": 18578.75,
+      "relError": 8.918508557902054e-8,
+      "thinkingTokens": 3811,
+      "outputTokens": 3824,
+      "raw": "ANSWER: 18578.75"
+    },
+    {
+      "id": "runway-4",
+      "kind": "runway",
+      "months": null,
+      "model": "claude-opus-5",
+      "want": 5,
+      "answeredBy": "claude-opus-5",
+      "got": 5,
+      "relError": 0,
+      "thinkingTokens": 112,
+      "outputTokens": 122,
+      "raw": "ANSWER: 5"
+    },
+    {
+      "id": "mrr-5",
+      "kind": "mrr",
+      "months": 60,
+      "model": "claude-opus-5",
+      "want": 14887.453040647115,
+      "answeredBy": "claude-opus-5",
+      "got": 14887.45,
+      "relError": 2.0424226399734698e-7,
+      "thinkingTokens": 1217,
+      "outputTokens": 1230,
+      "raw": "ANSWER: 14887.45"
+    },
+    {
+      "id": "cash-6",
+      "kind": "cash",
+      "months": 36,
+      "model": "claude-opus-5",
+      "want": 5822959.304807226,
+      "answeredBy": "claude-opus-5",
+      "got": 5822959,
+      "relError": 5.2345759298359134e-8,
+      "thinkingTokens": 1263,
+      "outputTokens": 1275,
+      "raw": "ANSWER: 5822959"
+    },
+    {
+      "id": "ltv-7",
+      "kind": "ltv",
+      "months": null,
+      "model": "claude-opus-5",
+      "want": 2346.842105263158,
+      "answeredBy": "claude-opus-5",
+      "got": 2346.84,
+      "relError": 8.970621215001095e-7,
+      "thinkingTokens": 156,
+      "outputTokens": 169,
+      "raw": "ANSWER: 2346.84"
+    },
+    {
+      "id": "two-phase-8",
+      "kind": "two-phase",
+      "months": 36,
+      "model": "claude-opus-5",
+      "want": 21262.901931922686,
+      "answeredBy": "claude-opus-5",
+      "got": 21262.9,
+      "relError": 9.085884377751978e-8,
+      "thinkingTokens": 4839,
+      "outputTokens": 4852,
+      "raw": "ANSWER: 21262.90"
+    },
+    {
+      "id": "runway-9",
+      "kind": "runway",
+      "months": null,
+      "model": "claude-opus-5",
+      "want": 11,
+      "answeredBy": "claude-opus-5",
+      "got": 11,
+      "relError": 0,
+      "thinkingTokens": 155,
+      "outputTokens": 165,
+      "raw": "ANSWER: 11"
+    }
+  ]
+}
