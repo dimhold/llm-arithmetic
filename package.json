@@ -1,7 +1,7 @@
 {
   "name": "llm-arithmetic",
   "version": "1.0.0",
-  "description": "Ten SaaS arithmetic problems given to two Claude models with every tool disabled, scored against ground truth computed in code.",
+  "description": "Ten SaaS arithmetic problems given to four Claude models with every tool disabled, scored against ground truth computed in code.",
   "license": "MIT",
   "author": "Dmitry Semenkevich <dimhold@gmail.com>",
   "type": "module",

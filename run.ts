@@ -1,13 +1,13 @@
 /**
  * Can Anthropic's models do SaaS arithmetic with no calculator?
  *
- * Same tasks, same prompt, same isolation, two models. Tools are disabled
+ * Same tasks, same prompt, same isolation, across the models you pass. Tools are disabled
  * (`--tools ""`) AND MCP servers are disabled (`--strict-mcp-config` with an
  * empty config), so a model cannot shell out or query anything — it either does
  * the arithmetic itself or it doesn't.
  *
  *   npx tsx run.ts [--n 10] [--concurrency 2]
- *                                          [--models claude-haiku-4-5,claude-opus-5]
+ *                  [--models claude-opus-5,claude-sonnet-5,claude-haiku-4-5,claude-fable-5]
  *
  * Deliberately NOT measured: wall-clock time. It would measure the network, not
  * the model. Reasoning-token counts are recorded instead — they do not depend on
@@ -31,7 +31,7 @@ function arg(name: string, fallback: string): string {
 
 const N = Number(arg("n", "10"));
 const CONCURRENCY = Number(arg("concurrency", "2"));
-const MODELS = arg("models", "claude-haiku-4-5,claude-opus-5").split(",").map((m) => m.trim()).filter(Boolean);
+const MODELS = arg("models", "claude-opus-5,claude-sonnet-5,claude-haiku-4-5,claude-fable-5").split(",").map((m) => m.trim()).filter(Boolean);
 const RUN_DATE = arg("date", new Date().toISOString().slice(0, 10)); // date only, no time
 
 /** Deterministic PRNG: the same seed always yields the same task set. */
@@ -365,21 +365,7 @@ const OUT = join(HERE, "results.json");
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(
   OUT,
-  // The absolute path to no-mcp.json is machine specific and would end up in a
-  // published artifact, so it is recorded by name.
-  JSON.stringify(
-    {
-      date: RUN_DATE,
-      seed: SEED,
-      models: MODELS,
-      prompt: PROMPT_PREFIX,
-      cliArgs: cliArgs("<model>").map((a) => (a === join(HERE, "no-mcp.json") ? "no-mcp.json" : a)),
-      tasks,
-      rows,
-    },
-    null,
-    2
-  ) + "\n",
+  JSON.stringify({ date: RUN_DATE, seed: SEED, models: MODELS, prompt: PROMPT_PREFIX, cliArgs: cliArgs("<model>"), tasks, rows }, null, 2) + "\n",
   "utf8"
 );
 

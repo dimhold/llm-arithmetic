@@ -1,6 +1,6 @@
-# Transcript — 2026-08-12
+# Transcript — 2026-08-16
 
-Models: claude-haiku-4-5, claude-opus-5. Seed 20260812. Tools and MCP disabled.
+Models: claude-opus-5, claude-sonnet-5, claude-haiku-4-5, claude-fable-5. Seed 20260812. Tools and MCP disabled.
 
 Command (prompt over stdin):
 
@@ -20,21 +20,37 @@ A SaaS starts at $8,000 MRR. Each month, in this exact order: MRR first grows by
 
 **Expected** (computed in code): 38115.30678167854
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 38115.03
-```
-
-Parsed: 38115.03 · error: 0.0007% · reasoning tokens: 11835
-
 ### claude-opus-5
 
 ```
 ANSWER: 38115.31
 ```
 
-Parsed: 38115.31 · error: 0.0000% · reasoning tokens: 2563
+Parsed: 38115.31 · error: 0.0000% · reasoning tokens: 936
+
+### claude-sonnet-5
+
+```
+ANSWER: 38115.31
+```
+
+Parsed: 38115.31 · error: 0.0000% · reasoning tokens: 5896
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: $38,115
+```
+
+Parsed: 38115 · error: 0.0008% · reasoning tokens: 7710
+
+### claude-fable-5
+
+```
+ANSWER: 38115.34
+```
+
+Parsed: 38115.34 · error: 0.0001% · reasoning tokens: 1430
 
 ## cash-1
 
@@ -46,21 +62,37 @@ A company starts with $900,000 in cash. It spends a fixed $40,000 every month. R
 
 **Expected** (computed in code): 4864506.921884278
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: $4,864,308
-```
-
-Parsed: 4864308 · error: 0.0041% · reasoning tokens: 1547
-
 ### claude-opus-5
 
 ```
 ANSWER: 4864506.92
 ```
 
-Parsed: 4864506.92 · error: 0.0000% · reasoning tokens: 1395
+Parsed: 4864506.92 · error: 0.0000% · reasoning tokens: 1018
+
+### claude-sonnet-5
+
+```
+ANSWER: 4864506.96
+```
+
+Parsed: 4864506.96 · error: 0.0000% · reasoning tokens: 3281
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 4864544.82
+```
+
+Parsed: 4864544.82 · error: 0.0008% · reasoning tokens: 3873
+
+### claude-fable-5
+
+```
+ANSWER: 4864506.92
+```
+
+Parsed: 4864506.92 · error: 0.0000% · reasoning tokens: 1182
 
 ## ltv-2
 
@@ -72,14 +104,6 @@ ARPU is $240/month, gross margin is 78%, monthly customer churn is 2.4%. Using L
 
 **Expected** (computed in code): 7800.000000000001
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 7800
-```
-
-Parsed: 7800 · error: 0.0000% · reasoning tokens: 187
-
 ### claude-opus-5
 
 ```
@@ -87,6 +111,30 @@ ANSWER: 7800
 ```
 
 Parsed: 7800 · error: 0.0000% · reasoning tokens: 27
+
+### claude-sonnet-5
+
+```
+ANSWER: 7800
+```
+
+Parsed: 7800 · error: 0.0000% · reasoning tokens: 0
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 7800
+```
+
+Parsed: 7800 · error: 0.0000% · reasoning tokens: 161
+
+### claude-fable-5
+
+```
+ANSWER: 7800
+```
+
+Parsed: 7800 · error: 0.0000% · reasoning tokens: 33
 
 ## two-phase-3
 
@@ -98,21 +146,37 @@ A SaaS starts at $26,000 MRR. Each month, in this exact order: MRR grows, then c
 
 **Expected** (computed in code): 18578.74834305274
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 18586
-```
-
-Parsed: 18586 · error: 0.0390% · reasoning tokens: 11085
-
 ### claude-opus-5
 
 ```
 ANSWER: 18578.75
 ```
 
-Parsed: 18578.75 · error: 0.0000% · reasoning tokens: 3811
+Parsed: 18578.75 · error: 0.0000% · reasoning tokens: 1665
+
+### claude-sonnet-5
+
+```
+ANSWER: 18578.73
+```
+
+Parsed: 18578.73 · error: 0.0001% · reasoning tokens: 10793
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 18553
+```
+
+Parsed: 18553 · error: 0.1386% · reasoning tokens: 13085
+
+### claude-fable-5
+
+```
+ANSWER: 18578.75
+```
+
+Parsed: 18578.75 · error: 0.0000% · reasoning tokens: 1148
 
 ## runway-4
 
@@ -124,21 +188,37 @@ A company has $300,000 in cash and no revenue. Monthly burn is $60,000 in months
 
 **Expected** (computed in code): 5
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 5
-```
-
-Parsed: 5 · error: 0.0000% · reasoning tokens: 469
-
 ### claude-opus-5
 
 ```
 ANSWER: 5
 ```
 
-Parsed: 5 · error: 0.0000% · reasoning tokens: 112
+Parsed: 5 · error: 0.0000% · reasoning tokens: 90
+
+### claude-sonnet-5
+
+```
+ANSWER: 5
+```
+
+Parsed: 5 · error: 0.0000% · reasoning tokens: 133
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 5
+```
+
+Parsed: 5 · error: 0.0000% · reasoning tokens: 355
+
+### claude-fable-5
+
+```
+ANSWER: 5
+```
+
+Parsed: 5 · error: 0.0000% · reasoning tokens: 104
 
 ## mrr-5
 
@@ -150,21 +230,37 @@ A SaaS starts at $12,000 MRR. Each month, in this exact order: MRR first grows b
 
 **Expected** (computed in code): 14887.453040647115
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 14888.57
-```
-
-Parsed: 14888.57 · error: 0.0075% · reasoning tokens: 4581
-
 ### claude-opus-5
 
 ```
 ANSWER: 14887.45
 ```
 
-Parsed: 14887.45 · error: 0.0000% · reasoning tokens: 1217
+Parsed: 14887.45 · error: 0.0000% · reasoning tokens: 338
+
+### claude-sonnet-5
+
+```
+ANSWER: 14887.45
+```
+
+Parsed: 14887.45 · error: 0.0000% · reasoning tokens: 1403
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 14887.54
+```
+
+Parsed: 14887.54 · error: 0.0006% · reasoning tokens: 10160
+
+### claude-fable-5
+
+```
+ANSWER: 14887.46
+```
+
+Parsed: 14887.46 · error: 0.0000% · reasoning tokens: 488
 
 ## cash-6
 
@@ -176,21 +272,37 @@ A company starts with $420,000 in cash. It spends a fixed $40,000 every month. R
 
 **Expected** (computed in code): 5822959.304807226
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 5817183.87
-```
-
-Parsed: 5817183.87 · error: 0.0992% · reasoning tokens: 4697
-
 ### claude-opus-5
 
 ```
 ANSWER: 5822959
 ```
 
-Parsed: 5822959 · error: 0.0000% · reasoning tokens: 1263
+Parsed: 5822959 · error: 0.0000% · reasoning tokens: 1440
+
+### claude-sonnet-5
+
+```
+ANSWER: 5822959.31
+```
+
+Parsed: 5822959.31 · error: 0.0000% · reasoning tokens: 5427
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 5831410
+```
+
+Parsed: 5831410 · error: 0.1451% · reasoning tokens: 7051
+
+### claude-fable-5
+
+```
+ANSWER: 5822959
+```
+
+Parsed: 5822959 · error: 0.0000% · reasoning tokens: 1585
 
 ## ltv-7
 
@@ -202,21 +314,37 @@ ARPU is $49/month, gross margin is 91%, monthly customer churn is 1.9%. Using LT
 
 **Expected** (computed in code): 2346.842105263158
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: $2347.37
-```
-
-Parsed: 2347.37 · error: 0.0225% · reasoning tokens: 343
-
 ### claude-opus-5
 
 ```
 ANSWER: 2346.84
 ```
 
-Parsed: 2346.84 · error: 0.0001% · reasoning tokens: 156
+Parsed: 2346.84 · error: 0.0001% · reasoning tokens: 45
+
+### claude-sonnet-5
+
+```
+ANSWER: 2347.37
+```
+
+Parsed: 2347.37 · error: 0.0225% · reasoning tokens: 33
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 2346.32
+```
+
+Parsed: 2346.32 · error: 0.0222% · reasoning tokens: 421
+
+### claude-fable-5
+
+```
+ANSWER: 2346.84
+```
+
+Parsed: 2346.84 · error: 0.0001% · reasoning tokens: 42
 
 ## two-phase-8
 
@@ -228,21 +356,37 @@ A SaaS starts at $9,000 MRR. Each month, in this exact order: MRR grows, then ch
 
 **Expected** (computed in code): 21262.901931922686
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 21353
-```
-
-Parsed: 21353 · error: 0.4237% · reasoning tokens: 11961
-
 ### claude-opus-5
 
 ```
-ANSWER: 21262.90
+ANSWER: 21262.9
 ```
 
-Parsed: 21262.9 · error: 0.0000% · reasoning tokens: 4839
+Parsed: 21262.9 · error: 0.0000% · reasoning tokens: 2055
+
+### claude-sonnet-5
+
+```
+ANSWER: 21262.91
+```
+
+Parsed: 21262.91 · error: 0.0000% · reasoning tokens: 7349
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 21271
+```
+
+Parsed: 21271 · error: 0.0381% · reasoning tokens: 14239
+
+### claude-fable-5
+
+```
+ANSWER: 21263
+```
+
+Parsed: 21263 · error: 0.0005% · reasoning tokens: 2161
 
 ## runway-9
 
@@ -254,18 +398,34 @@ A company has $750,000 in cash and no revenue. Monthly burn is $60,000 in months
 
 **Expected** (computed in code): 11
 
-### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
-
-```
-ANSWER: 11
-```
-
-Parsed: 11 · error: 0.0000% · reasoning tokens: 535
-
 ### claude-opus-5
 
 ```
 ANSWER: 11
 ```
 
-Parsed: 11 · error: 0.0000% · reasoning tokens: 155
+Parsed: 11 · error: 0.0000% · reasoning tokens: 157
+
+### claude-sonnet-5
+
+```
+ANSWER: 11
+```
+
+Parsed: 11 · error: 0.0000% · reasoning tokens: 205
+
+### claude-haiku-4-5 (answered by claude-haiku-4-5-20251001)
+
+```
+ANSWER: 11
+```
+
+Parsed: 11 · error: 0.0000% · reasoning tokens: 972
+
+### claude-fable-5
+
+```
+ANSWER: 11
+```
+
+Parsed: 11 · error: 0.0000% · reasoning tokens: 101
