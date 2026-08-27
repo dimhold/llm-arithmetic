@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "llm-arithmetic"
+type: software
+authors:
+  - family-names: Semenkevich
+    given-names: Dmitriy
+    orcid: "https://orcid.org/0009-0009-3013-4978"
+version: "1.0.0"
+date-released: "2026-08-27"
+license: MIT
+repository-code: "https://github.com/dimhold/llm-arithmetic"
+abstract: "Can four Claude models do founder arithmetic with no calculator? Ten seeded problems, tools and MCP disabled, ground truth computed in code."
+keywords:
+  - "LLM evaluation"
+  - "arithmetic reasoning"
+  - "benchmarking"
+  - "reproducibility"
