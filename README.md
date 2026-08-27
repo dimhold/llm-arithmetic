@@ -61,3 +61,26 @@ full reply.
 
 Ten problems, four models, one sitting, single-shot answers. Enough to compare four
 models on the same tasks; not enough to state failure rates for either.
+
+## Prior work
+
+Checked 2026-08-27. The field is occupied end to end. This repo is a spot
+check inside it, not a claim of novelty.
+
+- [GSM8K](https://arxiv.org/abs/2110.14168) (2021) made multi-step arithmetic
+  word problems the standard LLM measure and every model card since reports it.
+- [FinQA](https://arxiv.org/abs/2109.00122) (2021) and
+  [BizBench](https://arxiv.org/abs/2311.06602) (2023) cover numerical
+  reasoning over financial and business material at dataset scale.
+- [How well do Large Language Models perform in Arithmetic tasks?](https://arxiv.org/abs/2304.02015)
+  (2023) measures raw arithmetic with no tools across model families.
+- [wesm/llm-arithmetic-benchmark](https://github.com/wesm/llm-arithmetic-benchmark)
+  (December 2025) runs tool-free arithmetic aggregation over CSV rows on
+  current models, the same no calculator condition this repo uses.
+
+Nothing here is first. What this repo keeps is the framing and the hygiene:
+10 questions a founder actually types, a seeded generator so the task set
+replays exactly and an isolation that also cuts MCP and is verified rather
+than assumed. The answering model is checked against the API response instead
+of the flag that requested it. It answers "can I trust this model with my own
+runway maths" rather than ranking models on a leaderboard.
