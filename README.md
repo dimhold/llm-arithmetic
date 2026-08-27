@@ -2,6 +2,8 @@
 
 # Can Anthropic's models do SaaS arithmetic without a calculator?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22128841.svg)](https://doi.org/10.5281/zenodo.22128841)
+
 Run date: 2026-08-16 (v2, four models). v1 on 2026-08-12 ran only the two ends,
 opus and haiku; this version adds sonnet and fable and repeats all four in one
 sitting. Headline numbers reproduced (opus 10/10, haiku 3/10). See `RESULTS.md`.
