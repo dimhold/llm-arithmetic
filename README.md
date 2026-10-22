@@ -50,6 +50,8 @@ within 5%, median and worst. **Exact** means the answer differs from the compute
 value by no more than display rounding (relative error ≤ 1e-6) — a looser bar
 would score a $199 miss on a $4.8M forecast as correct.
 
+**Edits made for publication (2026-10-22).** One local path in `results.json` (the empty MCP config passed to the CLI) is written as `<private-project>`. Nothing else changed.
+
 ## Reproduce
 
 ```bash
